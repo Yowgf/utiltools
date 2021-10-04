@@ -1,35 +1,10 @@
 #!/bin/bash
 
-# This program checks if a directory is inaltered after running some command
-#
-# It returns 1 if the directory was altered in any way 
-function usage {
-    echo "Usage: <program> <directory> <command>"
-}
+# Try this and parent directories
+if [ -f lib/isInvariant.sh ]; then
+    source lib/isInvariant.sh  
+else
+    source ../lib/isInvariant.sh
+fi
 
-function internal {
-    echo "Problem executing script. Halt" 1>&2
-    exit 1
-}
-
-function isfsEqual {
-    [ -f "$1" ] && [ -f "$2" ] && \
-    diff "$1" "$2" > /dev/null 2>&1
-}
-
-function main {
-    dir="$1"
-    middleCommand="$2"
-    tmpDir=`mktemp -d`
-    cp -r "$dir"/* "$tmpDir" || internal
-    eval "$2" || internal
-    for f in $(ls "$dir"); do
-	if isfsEqual "$dir/$f" "$tmpDir/$f"; [ $? -ne 0 ]; then
-	    rm -rf "$tmpDir"
-	    exit 1
-	fi
-    done
-    rm -rf "$tmpDir"
-}
-
-main "$@"
+isInvariant "$@"
