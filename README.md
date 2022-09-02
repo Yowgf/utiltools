@@ -1,2 +1,3 @@
-# utils-shell
-Utilities for shell scripts
+# utils-linux
+
+Utilities for Linux
