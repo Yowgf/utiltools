@@ -16,6 +16,6 @@
 
 cd repair && \
     sudo docker build --no-cache . -t repair:1 && \
-    cd .. && sudo docker-compose -f sidecar.compose.yaml down && \
+    cd .. && sudo docker-compose -f compose.yaml down && \
     sudo docker system prune --volumes -f && \
-    sudo docker-compose -f sidecar.compose.yaml up -d
+    sudo docker-compose -f compose.yaml up -d
