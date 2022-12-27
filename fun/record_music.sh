@@ -22,35 +22,21 @@ function sumf {
     echo $1 + $2 | bc
 }
 
-next_sleep=0
-next_note_delay=0
 acc_delay=0
-play_delays=
-apply_delay_now=false
 i=0
 while [ $i -lt ${#MUSIC[@]} ]; do
     play_note=${MUSIC[$i]}
     play_delay=${MUSIC[$((i+1))]}
     if [ "$play_note" = "$PAUSE" ]; then
 	# Don't add note, just accumulate
-	apply_delay_now=false
 	acc_delay=$(sumf $acc_delay $play_delay)
 	play_delay=0
     else
 	# Add note
 	play_notes="$play_notes pl $play_note"
-
-	if [ "$apply_delay_now" = "true" ]; then
-	    # Apply delay in this note
-	    acc_delay=$(sumf $acc_delay $play_delay)
-	    play_delays="$play_delays $acc_delay"
-	    play_delay=0
-	    apply_delay_now=false
-	else
-	    # Apply delay in the next note
-	    play_delays="$play_delays $acc_delay"
-	    acc_delay=$(sumf $acc_delay $play_delay)
-	fi
+	# Will apply delay in the next note
+	play_delays="$play_delays $acc_delay"
+	acc_delay=$(sumf $acc_delay $play_delay)
     fi
     i=$((i + 2))
 done
