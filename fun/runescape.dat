@@ -1,0 +1,127 @@
+MUSIC=(
+D3 $semiquaver
+E3 $semiquaver
+F3 $semiquaver
+D3 $semiquaver
+E3 $semiquaver
+F3 $semiquaver
+A3 $semiquaver
+G3 $semiquaver
+C3 $crotchet
+
+G3 $semiquaver
+F3 $semiquaver
+E3 $crotchet
+
+F3 $semiquaver
+E3 $semiquaver
+D3 $quaver
+C3 $crotchet
+
+D3 $semiquaver
+E3 $semiquaver
+F3 $semiquaver
+D3 $semiquaver
+E3 $semiquaver
+F3 $semiquaver
+A3 $semiquaver
+G3 $semiquaver
+C3 $crotchet
+
+G3 $semiquaver
+F3 $semiquaver
+E3 $quaver
+G3 $quaver
+D3 $minim
+
+D4 $semiquaver
+D4 $semiquaver
+A3 $semiquaver
+A3 $semiquaver
+F#3 $semiquaver
+F#3 $semiquaver
+D4 $semiquaver
+D4 $semiquaver
+A3 $semiquaver
+A3 $semiquaver
+F#3 $semiquaver
+F#3 $semiquaver
+# Repeat one tone below
+C4 $semiquaver
+C4 $semiquaver
+G3 $semiquaver
+G3 $semiquaver
+E3 $semiquaver
+E3 $semiquaver
+C4 $semiquaver
+C4 $semiquaver
+G3 $semiquaver
+G3 $semiquaver
+E3 $semiquaver
+E3 $semiquaver
+
+# Repeat
+D4 $semiquaver
+D4 $semiquaver
+A3 $semiquaver
+A3 $semiquaver
+F#3 $semiquaver
+F#3 $semiquaver
+D4 $semiquaver
+D4 $semiquaver
+A3 $semiquaver
+A3 $semiquaver
+F#3 $semiquaver
+F#3 $semiquaver
+# One tone below
+C4 $semiquaver
+C4 $semiquaver
+G3 $semiquaver
+G3 $semiquaver
+E3 $semiquaver
+E3 $semiquaver
+C4 $semiquaver
+C4 $semiquaver
+G3 $semiquaver
+G3 $semiquaver
+E3 $semiquaver
+E3 $semiquaver
+
+$PAUSE $quaver
+
+D4 $minim
+
+D4 $semiquaver
+E4 $semiquaver
+F4 $crotchet
+
+A4 $semiquaver
+G4 $semiquaver
+C4 $crotchet
+
+G4 $semiquaver
+F4 $semiquaver
+E4 $crotchet
+
+F4 $semiquaver
+E4 $semiquaver
+D4 $quaver
+C4 $quaver
+
+# Repeat
+D4 $semiquaver
+E4 $semiquaver
+F4 $crotchet
+
+A4 $semiquaver
+G4 $semiquaver
+C4 $crotchet
+
+G4 $semiquaver
+F4 $semiquaver
+E4 $quaver
+G4 $quaver
+D4 $minim
+
+$PAUSE $minim
+)

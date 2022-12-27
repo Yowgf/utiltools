@@ -1,0 +1,1 @@
+To run a command, press ALT + F2

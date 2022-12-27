@@ -1,0 +1,106 @@
+MUSIC=(
+E3 $semiquaver
+E3 $semiquaver
+E3 $quaver
+
+E3 $semiquaver
+E3 $semiquaver
+E3 $quaver
+
+E3 $semiquaver
+G3 $semiquaver
+C3 $semiquaver
+D3 $semiquaver
+E3 $crotchet
+
+F3 $semiquaver
+F3 $semiquaver
+F3 $quaver
+
+F3 $semiquaver
+E3 $semiquaver
+E3 $quaver
+
+G3 $semiquaver
+G3 $semiquaver
+F3 $semiquaver
+D3 $semiquaver
+C3 $minim
+
+# Second part
+
+G2 $semiquaver
+E3 $semiquaver
+D3 $semiquaver
+C3 $semiquaver
+G2 $semiquaver
+
+$PAUSE $quaver
+
+G2 $semisemiquaver
+G2 $semisemiquaver
+G2 $semisemiquaver
+E3 $semiquaver
+D3 $semiquaver
+C3 $semiquaver
+A2 $semiquaver
+
+$PAUSE $quaver
+
+A2 $semisemiquaver
+A2 $semisemiquaver
+A2 $semisemiquaver
+F3 $semiquaver
+E3 $semiquaver
+D3 $semiquaver
+B2 $semiquaver
+
+$PAUSE $quaver
+
+G3 $semisemiquaver
+G3 $semisemiquaver
+A3 $semiquaver
+G3 $semiquaver
+D3 $semiquaver
+D3 $semiquaver
+E3 $semiquaver
+
+$PAUSE $quaver
+
+# Repeat for special ending
+G2 $semiquaver
+E3 $semiquaver
+D3 $semiquaver
+C3 $semiquaver
+G2 $semiquaver
+
+$PAUSE $quaver
+
+G2 $semisemiquaver
+G2 $semisemiquaver
+G2 $semisemiquaver
+E3 $semiquaver
+D3 $semiquaver
+C3 $semiquaver
+A2 $semiquaver
+
+$PAUSE $quaver
+
+A2 $semisemiquaver
+A2 $semisemiquaver
+A2 $semisemiquaver
+F3 $semiquaver
+E3 $semiquaver
+D3 $semiquaver
+G3 $semiquaver
+G3 $semiquaver
+G3 $semiquaver
+G3 $semiquaver
+A3 $semiquaver
+G3 $semiquaver
+F3 $semiquaver
+D3 $semiquaver
+C3 $semiquaver
+
+$PAUSE $minim
+)
