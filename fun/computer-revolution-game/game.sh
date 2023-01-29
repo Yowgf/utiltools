@@ -24,4 +24,4 @@ function evil_laugh_with_skull {
 }
 
 first_speech
-evil_laugh 3
+evil_laugh_with_skull
