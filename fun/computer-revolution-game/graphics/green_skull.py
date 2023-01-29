@@ -17,7 +17,6 @@ class Clock:
         self._fps = fps
 
     def tick(self):
-        print("Time left:", self._time_left)
         self._clock.tick(self._fps)
         self._time_left -= 1
         return self._time_left > 0
@@ -136,11 +135,9 @@ def draw_skull(program_running_seconds):
     pygame.quit()
     pygame.init()
     screen = new_screen()
-    print("A")
     skull = Skull(screen)
     fps = 60
     clock = Clock(int(program_running_seconds), fps)
-    print("b")
     running = True
     while running and not shutdown_screen_event.is_set():
         skull.draw()
@@ -163,8 +160,6 @@ def spawn_screens(number_of_screens, program_running_seconds):
         process = Process(target=draw_skull,args=[program_running_seconds])
         process.start()
         processes.append(process)
-        print("Processes:", processes)
-    print("Processes:", processes)
     return processes
 
 def main():
