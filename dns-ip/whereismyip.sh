@@ -1,4 +1,4 @@
 #!/bin/bash
 
-curl "https://ipinfo.io/$(./whatismyip.sh)"
+curl "https://ipinfo.io/"
 echo
