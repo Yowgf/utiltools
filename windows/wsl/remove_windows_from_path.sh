@@ -28,4 +28,15 @@ local_machine_path=$(query_windows_registry_path \
 local_machine_path=${local_machine_path%$'\r'}
 all_windows_paths="${wsl_path}:${local_machine_path}:${local_user_path}"
 
-export PATH=${PATH/$all_windows_paths}
+# add_windows_paths includes the windows paths at the end of PATH
+function add_windows_paths {
+    export PATH="${PATH/$all_windows_paths}:$all_windows_paths"
+}
+
+# remove_windows_paths removes the windows paths from anywhere inside of PATH
+function remove_windows_paths {
+    export PATH=${PATH/$all_windows_paths}
+    export PATH=${PATH%:}
+}
+
+remove_windows_paths
